@@ -2,6 +2,8 @@
 
 Controlla un **Gimbal DJI Ronin S** tramite un controller Bluetooth usando un **ESP32 ⚡**. La comunicazione con il gimbal avviene tramite il protocollo **S.BUS**, gestito dalla libreria custom `Ronin_SBUS.h`.
 
+---
+
 ## ✨ Funzionalità principali
 - 🕹️ Controllo **Pan** e **Tilt** del gimbal tramite joystick del controller.
 - 🎮 Supporto a **Switch Pro Controller** e altri controller compatibili con [Bluepad32](https://github.com/ricardoquesada/bluepad32).
@@ -9,23 +11,17 @@ Controlla un **Gimbal DJI Ronin S** tramite un controller Bluetooth usando un **
 - 📡 Invio dei dati S.BUS tramite la libreria custom `Ronin_SBUS.h`.
 - 🛠️ Compatibile con il microcontrollore **ESP32**
 
----
-
 ## 🚀 Come usare
 1. Caricare lo sketch su ESP32/Arduino.
 2. Accendere il controller Bluetooth e impostarlo in modalità di associazione.
 3. Muovere il joystick per controllare Pan e Tilt.
 4. Premere il tasto `B` per passare alla modalità velocità ridotta.
 
----
-
 ## 🔧 Requisiti hardware e software
 - ESP32 o Arduino compatibile.
 - Libreria **Bluepad32** installata.
 - Libreria custom `Ronin_SBUS.h`.
 - Gimbal DJI Ronin S con input S.BUS.
-
----
 
 ## 🔌 Schema di collegamento
 
@@ -39,8 +35,6 @@ Controlla un **Gimbal DJI Ronin S** tramite un controller Bluetooth usando un **
 - Assicurati che l’ESP32 sia alimentato correttamente tramite VIN a 5V.
 - Il pin D17 è usato come TX per inviare dati S.BUS al gimbal.
 - Non invertire i collegamenti GND/5V per evitare danni all’hardware.
-
----
 
 ## 💻 Software Setup
 
@@ -58,13 +52,9 @@ Controlla un **Gimbal DJI Ronin S** tramite un controller Bluetooth usando un **
    - Selezionare la scheda ESP32 corretta e la porta COM appropriata.  
    - Cliccare su **Upload**.
 
----
-
 💡 **Suggerimenti:**  
 - Assicurati che tutte le librerie siano aggiornate.  
 - Controlla che l’ESP32 sia correttamente alimentato e connesso al gimbal prima di testare il controllo.  
-
----
 
 ## 🙏 Ringraziamenti
 
