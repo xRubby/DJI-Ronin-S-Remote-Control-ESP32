@@ -2,7 +2,6 @@
 
 Controlla un **Gimbal DJI Ronin S** tramite un controller Bluetooth usando un **ESP32 ⚡**. La comunicazione con il gimbal avviene tramite il protocollo **S.BUS**, gestito dalla libreria custom `Ronin_SBUS.h`.
 
----
 
 ## ✨ Funzionalità principali
 - 🕹️ Controllo **Pan** e **Tilt** del gimbal tramite joystick del controller.
