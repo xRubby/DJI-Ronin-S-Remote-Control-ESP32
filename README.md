@@ -59,5 +59,5 @@ Controlla un **Gimbal DJI Ronin S** tramite un controller Bluetooth usando un **
 
 Un grazie speciale a tutti coloro che hanno reso possibile questo progetto:
 
-- Lo sviluppatore originale della libreria **[BMC_SBUS]**(https://github.com/boldstelvis/BMC_SBUS), da cui è nata la libreria `Ronin_SBUS` utilizzata in questo progetto.
-- Tutti i contributori della libreria **[Bluepad32]**(https://github.com/ricardoquesada/bluepad32), indispensabile per il supporto ai controller Bluetooth.
+- Lo sviluppatore originale della libreria [BMC_SBUS](https://github.com/boldstelvis/BMC_SBUS), da cui è nata la libreria `Ronin_SBUS` utilizzata in questo progetto.
+- Tutti i contributori della libreria [Bluepad32](https://github.com/ricardoquesada/bluepad32), indispensabile per il supporto ai controller Bluetooth.
