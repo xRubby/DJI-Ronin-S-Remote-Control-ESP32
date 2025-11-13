@@ -28,11 +28,11 @@ Controlla un **Gimbal DJI Ronin S** tramite un controller Bluetooth usando un **
 |-------------|-------|
 | 5V          | VIN   |
 | GND         | GND   |
-| S.BUS Data  | D17   |
+| S.BUS Data  | D14   |
 
 💡 **Note:**
 - Assicurati che l’ESP32 sia alimentato correttamente tramite VIN a 5V.
-- Il pin D17 è usato come TX per inviare dati S.BUS al gimbal.
+- Il pin D14 è usato come TX per inviare dati S.BUS al gimbal.
 - Non invertire i collegamenti GND/5V per evitare danni all’hardware.
 
 ## 💻 Software Setup
