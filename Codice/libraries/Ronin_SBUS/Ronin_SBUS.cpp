@@ -19,7 +19,7 @@ SBUS ©FUTABA CORPORATION 2016.
 
 #include "Ronin_SBUS.h"
 
-void Ronin_SBUS::begin()
+void Ronin_SBUS::begin(int commandPin)
 {
   //intialise private data arrays
   //sbus_data is formatted for correct serial output
@@ -33,7 +33,7 @@ void Ronin_SBUS::begin()
 
   //setup serial port to transmit at 100k baud and use 1 parity and 2 stop bits
 
-  SERIALPORT.begin(BAUDRATE, SERIAL_8E2, -1, 17, true);
+  SERIALPORT.begin(BAUDRATE, SERIAL_8E2, -1, commandPin, true);
 
   //setup public data arrays
 

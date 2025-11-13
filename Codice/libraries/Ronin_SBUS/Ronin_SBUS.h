@@ -12,7 +12,7 @@ class Ronin_SBUS
 	public:
 		uint8_t sbusData[25];
 		int16_t channelValues[18];
-		void begin(void);
+		void begin(int commandPin);
 		void SetValue(uint8_t ch, int16_t position);
 		void Send(void);
 		void Update(void);

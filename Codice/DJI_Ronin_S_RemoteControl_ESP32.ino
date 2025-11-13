@@ -6,12 +6,13 @@ ControllerPtr myController = nullptr;
 
 // --- Interfaccia S.BUS per Ronin ---
 Ronin_SBUS ronin;
+#define SBUS_PIN 14         // PIN ESP32
 
 // --- Costanti S.BUS ---
 const int sbusMID = 1024;   // Neutral val
 const int sbusMIN = 352;    // Min usable for analog val and switch val
 const int sbusMAX = 1696;   // Max usable for analog val and switch val
-const int sbusWAIT = 10;     // Frame timing delay in msecs
+const int sbusWAIT = 10;    // Frame timing delay in msecs
 
 // --- Variabili per la gestione della modalità di movimento (veloce o lenta) ---
 bool lowspeed=false;
@@ -71,7 +72,7 @@ void setup() {
   Serial.begin(115200);
   
   // Inizializza Ronin S.Bus
-  ronin.begin();
+  ronin.begin(SBUS_PIN);
 
   // Inizializza Bluepad32 con callback di connessione e disconnessione
   BP32.setup(&onConnectedController, &onDisconnectedController);
